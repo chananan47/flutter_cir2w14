@@ -2,13 +2,14 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget{
+  static String id = '/home';
   const HomeScreen({Key? key}) :super(key : key);
 
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.indigo,
         title: Text("Flutter App"),
         centerTitle: true,
       ),
@@ -246,7 +247,7 @@ class HomeScreen extends StatelessWidget{
           print("Test");
         },
       ),
-      drawer: Drawer(),
+      //drawer: Drawer(),
     );
   }
 }
